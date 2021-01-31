@@ -15,6 +15,7 @@ public class FirstPersonMovement : MonoBehaviour
 
     private Rigidbody _rb = null;
 
+
     void Awake() 
     {
         _rb = GetComponent<Rigidbody>();
@@ -24,13 +25,14 @@ public class FirstPersonMovement : MonoBehaviour
     void Update()
     {
         CheckKeyRay();
+
         OnInteract();
     }
 
     private void CheckKeyRay()
     {
         var ray = Camera.main.ScreenPointToRay(Camera.main.ViewportToScreenPoint(new Vector3(0.5f, 0.5f, 0f)));
-        if (Physics.Raycast(ray, out RaycastHit info, 0.75f, 1 << LayerMask.NameToLayer("Key")))
+        if (Physics.Raycast(ray, out RaycastHit info, 0.75f, 1 << LayerMask.NameToLayer(Layers.Key.ToString())))
         {
             var key = info.transform.GetComponent<Key>();
             if (key)
@@ -51,7 +53,7 @@ public class FirstPersonMovement : MonoBehaviour
 
     private void OnInteract()
     {
-        if (Input.GetButtonDown("Interact"))
+        if (Input.GetButtonDown(InputButton.Interact.ToString()))
         {
             if (_keyReference)
             {
