@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MoveObjectController : MonoBehaviour 
 {
-	public float reachRange = 1.8f;			
+	public float reachRange = 1.8f;
 
 	private Animator anim;
 	private Camera fpsCam;
@@ -17,6 +17,9 @@ public class MoveObjectController : MonoBehaviour
 	private string msg;
 
 	private int rayLayerMask;
+
+	private MoveableObject _moveableObjectReference = null;
+	private MoveableObject _lastMoveableObjectReference = null;
 
 	void Start()
 	{
@@ -76,19 +79,33 @@ public class MoveObjectController : MonoBehaviour
 				
 				if (moveableObject != null)
 				{
-					string animBoolNameNum = animBoolName + moveableObject.objectNumber.ToString();
+					_moveableObjectReference = moveableObject;
+					if (_lastMoveableObjectReference != _moveableObjectReference)
+						_lastMoveableObjectReference?.SetCanInteract(false);
+					_lastMoveableObjectReference = _moveableObjectReference;
+
+					string animBoolNameNum = animBoolName + _moveableObjectReference.objectNumber.ToString();
 					bool isOpen = anim.GetBool(animBoolNameNum);
+					_moveableObjectReference?.SetCanInteract(true);
 
 					if (Input.GetButtonDown(InputButton.Interact.ToString()))
 					{
 						anim.enabled = true;
 						anim.SetBool(animBoolNameNum, !isOpen);
 					}
-
 				}
 			}
+			else
+			{
+				_moveableObjectReference?.SetCanInteract(false);
+				_moveableObjectReference = null;
+			}
 		}
-
+		else
+		{
+			_moveableObjectReference?.SetCanInteract(false);
+			_moveableObjectReference = null;
+		}
 	}
 
 	//is current gameObject equal to the gameObject of other.  check its parents
