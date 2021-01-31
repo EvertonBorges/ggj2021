@@ -34,4 +34,11 @@ public class Key : MonoBehaviour
         }
     }
 
+    public void GetKey()
+    {
+        Hide();
+        SfxContoller.Instance?.PickKey(transform.position);
+        Destroy(gameObject);
+    }
+
 }
