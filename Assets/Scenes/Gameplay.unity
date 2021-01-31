@@ -486,7 +486,7 @@ PrefabInstance:
     - target: {fileID: 983254275933286335, guid: 23d25b2e2d4364dd4b92c52ef40cd36e,
         type: 3}
       propertyPath: m_TagString
-      value: SpawnTestKey
+      value: SpawnHouseKey
       objectReference: {fileID: 0}
     - target: {fileID: 1003996088085439416, guid: 23d25b2e2d4364dd4b92c52ef40cd36e,
         type: 3}
@@ -531,12 +531,12 @@ PrefabInstance:
     - target: {fileID: 3916978619049140819, guid: 23d25b2e2d4364dd4b92c52ef40cd36e,
         type: 3}
       propertyPath: m_TagString
-      value: SpawnTestKey
+      value: SpawnHouseKey
       objectReference: {fileID: 0}
     - target: {fileID: 4673761423975504142, guid: 23d25b2e2d4364dd4b92c52ef40cd36e,
         type: 3}
       propertyPath: m_TagString
-      value: SpawnTestKey
+      value: SpawnHouseKey
       objectReference: {fileID: 0}
     - target: {fileID: 4695941768484717659, guid: 23d25b2e2d4364dd4b92c52ef40cd36e,
         type: 3}
@@ -551,7 +551,7 @@ PrefabInstance:
     - target: {fileID: 6536894341584653865, guid: 23d25b2e2d4364dd4b92c52ef40cd36e,
         type: 3}
       propertyPath: m_TagString
-      value: SpawnTestKey
+      value: SpawnHouseKey
       objectReference: {fileID: 0}
     - target: {fileID: 7156364550016423017, guid: 23d25b2e2d4364dd4b92c52ef40cd36e,
         type: 3}
