@@ -7,6 +7,7 @@ TagManager:
   - SpawnRoomKey
   - SpawnHouseKey
   - SpawnTestKey
+  - WinTrigger
   layers:
   - Default
   - TransparentFX

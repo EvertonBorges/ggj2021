@@ -4,5 +4,5 @@ using UnityEngine;
 
 public enum Tags
 {
-    SpawnRoomKey, SpawnHouseKey, SpawnTestKey,
+    Player, SpawnRoomKey, SpawnHouseKey, SpawnTestKey,
 }

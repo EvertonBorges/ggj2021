@@ -20,6 +20,9 @@ public class FirstPersonMovement : Singleton<FirstPersonMovement>
     private Rigidbody _rb = null;
     private FootstepController _footstepController = null;
 
+    private bool _blockMovement = false;
+    public bool BlockMovement => _blockMovement;
+
     public bool CanInteract()
     {
         return _keyReference == null;
@@ -34,8 +37,10 @@ public class FirstPersonMovement : Singleton<FirstPersonMovement>
 
     void Update()
     {
-        CheckKeyRay();
+        if (_blockMovement)
+            return;
 
+        CheckKeyRay();
         OnInteract();
     }
 
@@ -75,6 +80,9 @@ public class FirstPersonMovement : Singleton<FirstPersonMovement>
 
     void FixedUpdate()
     {
+        if (_blockMovement)
+            return;
+        
         Movement();
     }
 
@@ -96,4 +104,10 @@ public class FirstPersonMovement : Singleton<FirstPersonMovement>
         else if (velocity.x == 0f && velocity.y == 0f)
             _timeFootstep = Time.time + timeBetweenSteps;
     }
+
+    public void SetBlockMovement(bool block)
+    {
+        _blockMovement = block;
+    }
+
 }
