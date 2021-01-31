@@ -4,6 +4,7 @@ using System.Collections;
 public class MoveObjectController : MonoBehaviour 
 {
 	public float reachRange = 1.8f;
+	[SerializeField] private bool _needKey = false;
 
 	private Animator anim;
 	private Camera fpsCam;
@@ -77,8 +78,11 @@ public class MoveObjectController : MonoBehaviour
 					return;
 				}
 				
-				if (moveableObject != null)
+				if (moveableObject != null && FirstPersonMovement.Instance.CanInteract())
 				{
+					if (_needKey && !FirstPersonMovement.Instance.HasKey)
+						return;
+
 					_moveableObjectReference = moveableObject;
 					if (_lastMoveableObjectReference != _moveableObjectReference)
 						_lastMoveableObjectReference?.SetCanInteract(false);

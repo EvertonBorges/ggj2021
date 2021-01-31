@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class FirstPersonMovement : MonoBehaviour
+public class FirstPersonMovement : Singleton<FirstPersonMovement>
 {
 
     [Range(0.01f, 0.99f)]
@@ -12,11 +12,16 @@ public class FirstPersonMovement : MonoBehaviour
 
     private Key _keyReference = null;
     private bool _hasKey = false;
+    public bool HasKey => _hasKey;
 
     private Rigidbody _rb = null;
 
+    public bool CanInteract()
+    {
+        return _keyReference == null;
+    }
 
-    void Awake() 
+    protected override void Init()
     {
         _rb = GetComponent<Rigidbody>();
         _crouch = GetComponentInChildren<Crouch>();
@@ -32,7 +37,7 @@ public class FirstPersonMovement : MonoBehaviour
     private void CheckKeyRay()
     {
         var ray = Camera.main.ScreenPointToRay(Camera.main.ViewportToScreenPoint(new Vector3(0.5f, 0.5f, 0f)));
-        if (Physics.Raycast(ray, out RaycastHit info, 0.75f, 1 << LayerMask.NameToLayer(Layers.Key.ToString())))
+        if (Physics.Raycast(ray, out RaycastHit info, 1f, 1 << LayerMask.NameToLayer(Layers.Key.ToString())))
         {
             var key = info.transform.GetComponent<Key>();
             if (key)
