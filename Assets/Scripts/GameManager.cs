@@ -16,7 +16,8 @@ public class GameManager : MonoBehaviour
     private void Setup()
     {
         var index = Random.Range(0, _spawnPositions.Length);
-        Instantiate(_keyPrefab, _spawnPositions[index].position, _keyPrefab.transform.rotation);
+        var spawnTransform = _spawnPositions[index];
+        Instantiate(_keyPrefab, spawnTransform.position, _keyPrefab.transform.rotation, spawnTransform);
     }
 
 }

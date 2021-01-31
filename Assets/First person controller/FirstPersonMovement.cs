@@ -5,8 +5,8 @@ public class FirstPersonMovement : Singleton<FirstPersonMovement>
 
     [Range(0.01f, 0.99f)]
     [SerializeField] private float crounchSpeedFactor = 0.5f;
+    [SerializeField] private float timeBetweenSteps = 2f;
     public float speed = 5;
-    Vector2 velocity;
 
     private Crouch _crouch = null;
 
@@ -14,7 +14,10 @@ public class FirstPersonMovement : Singleton<FirstPersonMovement>
     private bool _hasKey = false;
     public bool HasKey => _hasKey;
 
+    private float _timeFootstep = 0f;
+
     private Rigidbody _rb = null;
+    private FootstepController _footstepController = null;
 
     public bool CanInteract()
     {
@@ -24,6 +27,7 @@ public class FirstPersonMovement : Singleton<FirstPersonMovement>
     protected override void Init()
     {
         _rb = GetComponent<Rigidbody>();
+        _footstepController = GetComponentInChildren<FootstepController>();
         _crouch = GetComponentInChildren<Crouch>();
     }
 
@@ -70,11 +74,25 @@ public class FirstPersonMovement : Singleton<FirstPersonMovement>
 
     void FixedUpdate()
     {
+        Movement();
+    }
+
+    private void Movement()
+    {
         float finalSpeed = speed * (_crouch.IsCrouched ? crounchSpeedFactor : 1f);
 
-        velocity.y = Input.GetAxis("Vertical") * finalSpeed * Time.deltaTime;
-        velocity.x = Input.GetAxis("Horizontal") * finalSpeed * Time.deltaTime;
+        Vector2 velocity;
+        velocity.x = Input.GetAxis("Horizontal") * finalSpeed * Time.fixedDeltaTime;
+        velocity.y = Input.GetAxis("Vertical") * finalSpeed * Time.fixedDeltaTime;
         // _rb.velocity = new Vector3(velocity.x, 0, velocity.y); // TODO Melhorar posteriormente, personagem anda meio travado do jeito atual
         transform.Translate(velocity.x, 0, velocity.y);
+
+        if ((velocity.x != 0f || velocity.y != 0f) && _timeFootstep < Time.time)
+        {
+            _timeFootstep = Time.time + timeBetweenSteps / (_crouch.IsCrouched ? crounchSpeedFactor * 1.35f : 1f);
+            _footstepController.PlayFootstep();
+        }
+        else if (velocity.x == 0f && velocity.y == 0f)
+            _timeFootstep = Time.time + timeBetweenSteps;
     }
 }
