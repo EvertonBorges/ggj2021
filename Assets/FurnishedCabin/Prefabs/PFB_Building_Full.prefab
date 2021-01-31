@@ -5042,7 +5042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reachRange: 1.8
-  _needKey: 0
+  _scriptable: {fileID: 0}
 --- !u!114 &114000010425294980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6064,7 +6064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reachRange: 1.8
-  _needKey: 0
+  _scriptable: {fileID: 11400000, guid: 81e00864c4ceec249948c1e8a11dd573, type: 2}
 --- !u!114 &114000011125610996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7524,7 +7524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reachRange: 1.8
-  _needKey: 0
+  _scriptable: {fileID: 0}
 --- !u!1 &1000011015371202
 GameObject:
   m_ObjectHideFlags: 0
@@ -7605,7 +7605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reachRange: 1.8
-  _needKey: 0
+  _scriptable: {fileID: 0}
 --- !u!1 &1000011019590156
 GameObject:
   m_ObjectHideFlags: 0
@@ -8950,6 +8950,7 @@ GameObject:
   - component: {fileID: 33000012088143228}
   - component: {fileID: 23000012321732318}
   - component: {fileID: 64000013659240738}
+  - component: {fileID: 5047350206162539115}
   m_Layer: 0
   m_Name: PFB_DiningChair (2)
   m_TagString: Untagged
@@ -9033,6 +9034,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: cfcf075e496092c489e38a82a64dd637, type: 3}
+--- !u!65 &5047350206162539115
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011650155096}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.47506827, y: 0.5690713, z: 0.50415987}
+  m_Center: {x: -9.751262e-12, y: 0.2869498, z: 0.028409839}
 --- !u!1 &1000011663222344
 GameObject:
   m_ObjectHideFlags: 0
@@ -10350,7 +10364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reachRange: 1.9
-  _needKey: 0
+  _scriptable: {fileID: 0}
 --- !u!1 &1000012101761340
 GameObject:
   m_ObjectHideFlags: 0
@@ -11935,7 +11949,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reachRange: 1.8
-  _needKey: 0
+  _scriptable: {fileID: 0}
 --- !u!1 &1000012615259678
 GameObject:
   m_ObjectHideFlags: 0
@@ -13290,7 +13304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reachRange: 1.8
-  _needKey: 0
+  _scriptable: {fileID: 0}
 --- !u!65 &65000011400627782
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13763,7 +13777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reachRange: 1.8
-  _needKey: 0
+  _scriptable: {fileID: 0}
 --- !u!64 &64000013736877972
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13874,7 +13888,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reachRange: 1.8
-  _needKey: 0
+  _scriptable: {fileID: 11400000, guid: ab9698fae6fbf5f43a86c50715aa7704, type: 2}
 --- !u!1 &1000013502178602
 GameObject:
   m_ObjectHideFlags: 0
@@ -14476,7 +14490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reachRange: 1.8
-  _needKey: 0
+  _scriptable: {fileID: 0}
 --- !u!1 &1000013634868504
 GameObject:
   m_ObjectHideFlags: 0
@@ -15413,7 +15427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reachRange: 1.8
-  _needKey: 0
+  _scriptable: {fileID: 0}
 --- !u!95 &95000012470866046
 Animator:
   serializedVersion: 3
@@ -16227,7 +16241,7 @@ GameObject:
   - component: {fileID: 6070238472617574935}
   m_Layer: 9
   m_Name: SpawnPosition01
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16257,7 +16271,7 @@ GameObject:
   - component: {fileID: 3594484279262205943}
   m_Layer: 9
   m_Name: SpawnPosition00
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16287,7 +16301,7 @@ GameObject:
   - component: {fileID: 1450600522174573388}
   m_Layer: 9
   m_Name: SpawnPosition01
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16317,7 +16331,7 @@ GameObject:
   - component: {fileID: 6654787549625998385}
   m_Layer: 9
   m_Name: SpawnPosition01
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16347,7 +16361,7 @@ GameObject:
   - component: {fileID: 5733219172442901541}
   m_Layer: 9
   m_Name: SpawnPosition00
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16465,7 +16479,7 @@ GameObject:
   - component: {fileID: 1914069221271601225}
   m_Layer: 9
   m_Name: SpawnPosition02
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16495,7 +16509,7 @@ GameObject:
   - component: {fileID: 5388796726680842168}
   m_Layer: 9
   m_Name: SpawnPosition01
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16702,7 +16716,7 @@ GameObject:
   - component: {fileID: 6389905879425088202}
   m_Layer: 9
   m_Name: SpawnPosition00
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16898,7 +16912,7 @@ GameObject:
   - component: {fileID: 6613086845286557272}
   m_Layer: 9
   m_Name: SpawnPosition00
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16928,7 +16942,7 @@ GameObject:
   - component: {fileID: 362994306178967259}
   m_Layer: 9
   m_Name: SpawnPosition03
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16941,7 +16955,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853254321768169447}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.45, y: 0.225, z: 0}
+  m_LocalPosition: {x: 0.45, y: 0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4000011682282296}
@@ -17046,7 +17060,7 @@ GameObject:
   - component: {fileID: 7910146815992908856}
   m_Layer: 9
   m_Name: SpawnPosition00
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17154,7 +17168,7 @@ GameObject:
   - component: {fileID: 6125327461409419478}
   m_Layer: 9
   m_Name: SpawnPosition02
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17167,7 +17181,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196126503570318396}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.45, y: 0.622, z: 0.125}
+  m_LocalPosition: {x: -0.45, y: 0.622, z: 0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4000012106922582}
@@ -17272,7 +17286,7 @@ GameObject:
   - component: {fileID: 4695941768484717659}
   m_Layer: 9
   m_Name: SpawnPosition01
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17319,7 +17333,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3984626379776531250}
-  - {fileID: 1803058701215531857}
   - {fileID: 4924353323186352653}
   - {fileID: 2328941924678647407}
   - {fileID: 4301133185557265111}
@@ -17339,7 +17352,7 @@ GameObject:
   - component: {fileID: 6198427510338646865}
   m_Layer: 9
   m_Name: SpawnPosition04
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17369,7 +17382,7 @@ GameObject:
   - component: {fileID: 8665327539266824793}
   m_Layer: 9
   m_Name: SpawnPosition01
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17398,8 +17411,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1979245097106332829}
   m_Layer: 9
-  m_Name: SpawnPosition05
-  m_TagString: Untagged
+  m_Name: SpawnPosition04
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17416,7 +17429,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 9002568620828983380}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1762772770263134570
 GameObject:
@@ -17429,7 +17442,7 @@ GameObject:
   - component: {fileID: 554811992906517721}
   m_Layer: 9
   m_Name: SpawnPosition02
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17459,7 +17472,7 @@ GameObject:
   - component: {fileID: 8934211714860598064}
   m_Layer: 9
   m_Name: SpawnPosition00
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17489,7 +17502,7 @@ GameObject:
   - component: {fileID: 7675995750275058453}
   m_Layer: 9
   m_Name: SpawnPosition02
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17519,7 +17532,7 @@ GameObject:
   - component: {fileID: 5435454466312687845}
   m_Layer: 9
   m_Name: SpawnPosition05
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17532,7 +17545,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2006505516753783921}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.45, y: 0.265, z: 0.125}
+  m_LocalPosition: {x: -0.45, y: 0.265, z: 0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4000012106922582}
@@ -17549,7 +17562,7 @@ GameObject:
   - component: {fileID: 1112074482357517617}
   m_Layer: 9
   m_Name: SpawnPosition05
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17562,7 +17575,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2066383670376436879}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.45, y: 0.225, z: 0}
+  m_LocalPosition: {x: -0.45, y: 0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4000011682282296}
@@ -17579,7 +17592,7 @@ GameObject:
   - component: {fileID: 7011069164877405582}
   m_Layer: 9
   m_Name: SpawnPosition02
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17697,7 +17710,7 @@ GameObject:
   - component: {fileID: 8780809754288118147}
   m_Layer: 9
   m_Name: SpawnPosition01
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17727,7 +17740,7 @@ GameObject:
   - component: {fileID: 5561869408987035624}
   m_Layer: 9
   m_Name: SpawnPosition02
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17757,7 +17770,7 @@ GameObject:
   - component: {fileID: 5467084097673594360}
   m_Layer: 9
   m_Name: SpawnPosition00
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17787,7 +17800,7 @@ GameObject:
   - component: {fileID: 4395134783749440989}
   m_Layer: 9
   m_Name: SpawnPosition01
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17895,7 +17908,7 @@ GameObject:
   - component: {fileID: 3021346096147535048}
   m_Layer: 9
   m_Name: SpawnPosition00
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17924,8 +17937,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2328941924678647407}
   m_Layer: 9
-  m_Name: SpawnPosition03
-  m_TagString: Untagged
+  m_Name: SpawnPosition02
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17942,7 +17955,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 9002568620828983380}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2738630023195774437
 GameObject:
@@ -18043,7 +18056,7 @@ GameObject:
   - component: {fileID: 5470494167243151246}
   m_Layer: 9
   m_Name: SpawnPosition05
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18404,8 +18417,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5614832915930482319}
   m_Layer: 9
-  m_Name: SpawnPosition06
-  m_TagString: Untagged
+  m_Name: SpawnPosition05
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18422,7 +18435,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 9002568620828983380}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3298128688892028646
 GameObject:
@@ -18652,7 +18665,7 @@ GameObject:
   - component: {fileID: 6408321160168065476}
   m_Layer: 9
   m_Name: SpawnPosition00
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18682,7 +18695,7 @@ GameObject:
   - component: {fileID: 5213670166285187569}
   m_Layer: 9
   m_Name: SpawnPosition01
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18712,7 +18725,7 @@ GameObject:
   - component: {fileID: 8327699490297758807}
   m_Layer: 9
   m_Name: SpawnPosition02
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18780,7 +18793,7 @@ GameObject:
   - component: {fileID: 5146468023971520539}
   m_Layer: 9
   m_Name: SpawnPosition02
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18810,7 +18823,7 @@ GameObject:
   - component: {fileID: 2772218629387229692}
   m_Layer: 9
   m_Name: SpawnPosition00
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18840,7 +18853,7 @@ GameObject:
   - component: {fileID: 3098278421228551763}
   m_Layer: 9
   m_Name: SpawnPosition01
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18853,7 +18866,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4086820896526981313}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.622, z: 0.125}
+  m_LocalPosition: {x: 0, y: 0.622, z: 0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4000012106922582}
@@ -18958,7 +18971,7 @@ GameObject:
   - component: {fileID: 3454358438528856223}
   m_Layer: 9
   m_Name: SpawnPosition00
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19066,7 +19079,7 @@ GameObject:
   - component: {fileID: 4831755817168830685}
   m_Layer: 9
   m_Name: SpawnPosition00
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19096,7 +19109,7 @@ GameObject:
   - component: {fileID: 3216065294171355504}
   m_Layer: 9
   m_Name: SpawnPosition00
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19126,7 +19139,7 @@ GameObject:
   - component: {fileID: 4105189805190434877}
   m_Layer: 9
   m_Name: SpawnPosition04
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19156,7 +19169,7 @@ GameObject:
   - component: {fileID: 5002730991931350013}
   m_Layer: 9
   m_Name: SpawnPosition01
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19186,7 +19199,7 @@ GameObject:
   - component: {fileID: 8775581782275005819}
   m_Layer: 9
   m_Name: SpawnPosition01
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19382,7 +19395,7 @@ GameObject:
   - component: {fileID: 2796995054812240033}
   m_Layer: 9
   m_Name: SpawnPosition00
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19500,7 +19513,7 @@ GameObject:
   - component: {fileID: 3765015872423696501}
   m_Layer: 9
   m_Name: SpawnPosition00
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19530,7 +19543,7 @@ GameObject:
   - component: {fileID: 864747178663862815}
   m_Layer: 9
   m_Name: SpawnPosition04
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19543,7 +19556,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4818081826204253599}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.225, z: 0}
+  m_LocalPosition: {x: 0, y: 0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4000011682282296}
@@ -19892,7 +19905,7 @@ GameObject:
   - component: {fileID: 307519021185199152}
   m_Layer: 9
   m_Name: SpawnPosition00
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19999,36 +20012,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e8a811d26b4b34ba2a12f6dee927a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &5144906661325033574
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1803058701215531857}
-  m_Layer: 9
-  m_Name: SpawnPosition01
-  m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1803058701215531857
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5144906661325033574}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.625, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 9002568620828983380}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5170156341970420506
 GameObject:
   m_ObjectHideFlags: 0
@@ -20040,7 +20023,7 @@ GameObject:
   - component: {fileID: 1538980725012000572}
   m_Layer: 9
   m_Name: SpawnPosition01
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20148,7 +20131,7 @@ GameObject:
   - component: {fileID: 4250100552123407343}
   m_Layer: 9
   m_Name: SpawnPosition03
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20161,7 +20144,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5387104012093460527}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.45, y: 0.265, z: 0.125}
+  m_LocalPosition: {x: 0.45, y: 0.265, z: 0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4000012106922582}
@@ -20277,7 +20260,7 @@ GameObject:
   - component: {fileID: 1000172011018332136}
   m_Layer: 9
   m_Name: SpawnPosition07
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20583,7 +20566,7 @@ GameObject:
   - component: {fileID: 8571105223028683232}
   m_Layer: 9
   m_Name: SpawnPosition00
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20596,7 +20579,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5749999052146556163}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.45, y: 0.622, z: 0.125}
+  m_LocalPosition: {x: 0.45, y: 0.622, z: 0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4000012106922582}
@@ -20613,7 +20596,7 @@ GameObject:
   - component: {fileID: 1316062137018038262}
   m_Layer: 9
   m_Name: SpawnPosition06
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20643,7 +20626,7 @@ GameObject:
   - component: {fileID: 3141196762598024795}
   m_Layer: 9
   m_Name: SpawnPosition00
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20959,7 +20942,7 @@ GameObject:
   - component: {fileID: 1519921548672798227}
   m_Layer: 9
   m_Name: SpawnPosition06
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20989,7 +20972,7 @@ GameObject:
   - component: {fileID: 63790602166050283}
   m_Layer: 9
   m_Name: SpawnPosition04
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21002,7 +20985,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6234942827082814726}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.265, z: 0.125}
+  m_LocalPosition: {x: 0, y: 0.265, z: 0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4000012106922582}
@@ -21118,7 +21101,7 @@ GameObject:
   - component: {fileID: 8517629225528157994}
   m_Layer: 9
   m_Name: SpawnPosition00
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21148,7 +21131,7 @@ GameObject:
   - component: {fileID: 210752068199650153}
   m_Layer: 9
   m_Name: SpawnPosition01
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21178,7 +21161,7 @@ GameObject:
   - component: {fileID: 7116503304982289746}
   m_Layer: 9
   m_Name: SpawnPosition02
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21364,7 +21347,7 @@ GameObject:
   - component: {fileID: 1437260279471819799}
   m_Layer: 9
   m_Name: SpawnPosition00
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21394,7 +21377,7 @@ GameObject:
   - component: {fileID: 4352620369006117435}
   m_Layer: 9
   m_Name: SpawnPosition01
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21424,7 +21407,7 @@ GameObject:
   - component: {fileID: 3984626379776531250}
   m_Layer: 9
   m_Name: SpawnPosition00
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21454,7 +21437,7 @@ GameObject:
   - component: {fileID: 8745931538027335667}
   m_Layer: 9
   m_Name: SpawnPosition08
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21483,8 +21466,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4924353323186352653}
   m_Layer: 9
-  m_Name: SpawnPosition02
-  m_TagString: Untagged
+  m_Name: SpawnPosition01
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21501,7 +21484,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 9002568620828983380}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7801443737764889905
 GameObject:
@@ -21601,8 +21584,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4301133185557265111}
   m_Layer: 9
-  m_Name: SpawnPosition04
-  m_TagString: Untagged
+  m_Name: SpawnPosition03
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21619,7 +21602,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 9002568620828983380}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7885787310517059921
 GameObject:
@@ -21632,7 +21615,7 @@ GameObject:
   - component: {fileID: 6289401813402641694}
   m_Layer: 9
   m_Name: SpawnPosition00
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21662,7 +21645,7 @@ GameObject:
   - component: {fileID: 3457518009279577849}
   m_Layer: 9
   m_Name: SpawnPosition01
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21780,7 +21763,7 @@ GameObject:
   - component: {fileID: 4102485748675201723}
   m_Layer: 9
   m_Name: SpawnPosition03
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22008,7 +21991,7 @@ GameObject:
   - component: {fileID: 6307198258572724085}
   m_Layer: 9
   m_Name: SpawnPosition01
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22038,7 +22021,7 @@ GameObject:
   - component: {fileID: 2638601688734607053}
   m_Layer: 9
   m_Name: SpawnPosition03
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22068,7 +22051,7 @@ GameObject:
   - component: {fileID: 1917824101767610431}
   m_Layer: 9
   m_Name: SpawnPosition00
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22197,7 +22180,7 @@ GameObject:
   - component: {fileID: 6068261458451241811}
   m_Layer: 9
   m_Name: SpawnPosition02
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22326,7 +22309,7 @@ GameObject:
   - component: {fileID: 8907821100270588782}
   m_Layer: 9
   m_Name: SpawnPosition07
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22632,7 +22615,7 @@ GameObject:
   - component: {fileID: 1503111834495433335}
   m_Layer: 9
   m_Name: SpawnPosition01
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22761,7 +22744,7 @@ GameObject:
   - component: {fileID: 1063730697059801490}
   m_Layer: 9
   m_Name: SpawnPosition09
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22791,7 +22774,7 @@ GameObject:
   - component: {fileID: 3062635294230579366}
   m_Layer: 9
   m_Name: SpawnPosition00
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22821,7 +22804,7 @@ GameObject:
   - component: {fileID: 530193208964047813}
   m_Layer: 9
   m_Name: SpawnPosition00
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22851,7 +22834,7 @@ GameObject:
   - component: {fileID: 7926704906657918934}
   m_Layer: 9
   m_Name: SpawnPosition01
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22881,7 +22864,7 @@ GameObject:
   - component: {fileID: 7422123759886695798}
   m_Layer: 9
   m_Name: SpawnPosition05
-  m_TagString: Untagged
+  m_TagString: SpawnHouseKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23010,7 +22993,7 @@ GameObject:
   - component: {fileID: 8130607240196855854}
   m_Layer: 9
   m_Name: SpawnPosition01
-  m_TagString: Untagged
+  m_TagString: SpawnRoomKey
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

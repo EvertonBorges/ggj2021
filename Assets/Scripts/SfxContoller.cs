@@ -9,6 +9,7 @@ public class SfxContoller : Singleton<SfxContoller>
     private AudioSource _audioSource = null;
     
     [SerializeField] private AudioClip _pickKey = null;
+    [SerializeField] private AudioClip _doorLocked = null;
     [SerializeField] private AudioClip _doorUnlock = null;
 
     protected override void Init()
@@ -21,6 +22,12 @@ public class SfxContoller : Singleton<SfxContoller>
     {
         transform.position = position;
         PlayAudio(_pickKey);
+    }
+
+    public void DoorLocked(Vector3 position)
+    {
+        transform.position = position;
+        PlayAudio(_doorLocked);
     }
 
     public void DoorUnlock(Vector3 position)

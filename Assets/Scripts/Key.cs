@@ -8,29 +8,37 @@ public class Key : MonoBehaviour
     
     [SerializeField] private Image _interactImage = null;
 
-    private bool _isShowing = false;
+    private KeyScriptable _scriptable = null;
+    public KeyScriptable Scriptable => _scriptable;
+
+    private bool _isShowingCanvas = false;
 
     void Awake() 
     {
         _interactImage.gameObject.SetActive(false);
     }
 
+    public void Setup(KeyScriptable scriptable)
+    {
+        _scriptable = scriptable;
+    }
+
     public void Show()
     {
-        if (!_isShowing)
+        if (!_isShowingCanvas)
         {
-            _isShowing = true;
+            _isShowingCanvas = true;
             _interactImage.transform.position = transform.position + Vector3.up * 0.175f + Vector3.left * 0.05f;
-            _interactImage.gameObject.SetActive(_isShowing);
+            _interactImage.gameObject.SetActive(_isShowingCanvas);
         }
     }
 
     public void Hide()
     {
-        if (_isShowing)
+        if (_isShowingCanvas)
         {
-            _isShowing = false;
-            _interactImage.gameObject.SetActive(_isShowing);
+            _isShowingCanvas = false;
+            _interactImage.gameObject.SetActive(_isShowingCanvas);
         }
     }
 

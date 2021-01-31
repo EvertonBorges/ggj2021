@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class FirstPersonMovement : Singleton<FirstPersonMovement>
 {
@@ -11,8 +12,8 @@ public class FirstPersonMovement : Singleton<FirstPersonMovement>
     private Crouch _crouch = null;
 
     private Key _keyReference = null;
-    private bool _hasKey = false;
-    public bool HasKey => _hasKey;
+    private List<KeyScriptable> _keys = new List<KeyScriptable>();
+    public bool HasKey(KeyScriptable key) => _keys.Contains(key);
 
     private float _timeFootstep = 0f;
 
@@ -66,7 +67,7 @@ public class FirstPersonMovement : Singleton<FirstPersonMovement>
         {
             if (_keyReference)
             {
-                _hasKey = true;
+                _keys.Add(_keyReference.Scriptable);
                 _keyReference.GetKey();
             }
         }

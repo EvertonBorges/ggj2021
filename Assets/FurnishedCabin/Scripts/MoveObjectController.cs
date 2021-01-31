@@ -4,7 +4,9 @@ using System.Collections;
 public class MoveObjectController : MonoBehaviour 
 {
 	public float reachRange = 1.8f;
-	[SerializeField] private bool _needKey = false;
+	[SerializeField] private KeyScriptable _scriptable = null;
+
+	private bool _blockInteraction = false;
 
 	private Animator anim;
 	private Camera fpsCam;
@@ -61,7 +63,10 @@ public class MoveObjectController : MonoBehaviour
 	}
 
 	void Update()
-	{		
+	{
+		if (_blockInteraction)
+			return;
+
 		if (playerEntered)
 		{
 			//center point of viewport in World space.
@@ -80,8 +85,14 @@ public class MoveObjectController : MonoBehaviour
 				
 				if (moveableObject != null && FirstPersonMovement.Instance.CanInteract())
 				{
-					if (_needKey && !FirstPersonMovement.Instance.HasKey)
+					if (_scriptable != null && !FirstPersonMovement.Instance.HasKey(_scriptable))
+					{
+						if (Input.GetButtonDown(InputButton.Interact.ToString()))
+						{
+							SfxContoller.Instance?.DoorLocked(transform.position);
+						}
 						return;
+					}
 
 					_moveableObjectReference = moveableObject;
 					if (_lastMoveableObjectReference != _moveableObjectReference)
@@ -94,6 +105,13 @@ public class MoveObjectController : MonoBehaviour
 
 					if (Input.GetButtonDown(InputButton.Interact.ToString()))
 					{
+						if (_scriptable != null && FirstPersonMovement.Instance.HasKey(_scriptable))
+						{
+							_blockInteraction = true;
+							SfxContoller.Instance?.DoorUnlock(transform.position);
+							_moveableObjectReference?.SetCanInteract(false);
+						}
+
 						anim.enabled = true;
 						anim.SetBool(animBoolNameNum, !isOpen);
 					}
