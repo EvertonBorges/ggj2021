@@ -30,6 +30,9 @@ public class FirstPersonLook : MonoBehaviour
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
             }
+
+            character.localRotation = Quaternion.AngleAxis(currentMouseLook.x, Vector3.up);
+
             return;
         }
 

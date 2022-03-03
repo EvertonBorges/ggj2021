@@ -45,6 +45,7 @@ public class GameManager : Singleton<GameManager>
 
         _uiBg.Effect(false, () => {
             FirstPersonMovement.Instance?.SetBlockMovement(false);
+            
             _startTime = Time.time;
         });
     }

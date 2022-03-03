@@ -41,6 +41,7 @@ public class FirstPersonMovement : Singleton<FirstPersonMovement>
             return;
 
         CheckKeyRay();
+
         OnInteract();
     }
 
@@ -90,18 +91,19 @@ public class FirstPersonMovement : Singleton<FirstPersonMovement>
     {
         float finalSpeed = speed * (_crouch.IsCrouched ? crounchSpeedFactor : 1f);
 
-        Vector2 velocity;
-        velocity.x = Input.GetAxis("Horizontal") * finalSpeed * Time.fixedDeltaTime;
-        velocity.y = Input.GetAxis("Vertical") * finalSpeed * Time.fixedDeltaTime;
-        // _rb.velocity = new Vector3(velocity.x, 0, velocity.y); // TODO Melhorar posteriormente, personagem anda meio travado do jeito atual
-        transform.Translate(velocity.x, 0, velocity.y);
+        Vector3 velocity = 
+            Input.GetAxis("Horizontal") * finalSpeed * transform.right + 
+            Input.GetAxis("Vertical") * finalSpeed * transform.forward;
 
-        if ((velocity.x != 0f || velocity.y != 0f) && _timeFootstep < Time.time)
+        _rb.velocity = velocity;
+
+        if ((velocity != Vector3.zero) && _timeFootstep < Time.time)
         {
             _timeFootstep = Time.time + timeBetweenSteps / (_crouch.IsCrouched ? crounchSpeedFactor * 1.35f : 1f);
+
             _footstepController.PlayFootstep();
         }
-        else if (velocity.x == 0f && velocity.y == 0f)
+        else if (velocity == Vector3.zero)
             _timeFootstep = Time.time + timeBetweenSteps;
     }
 

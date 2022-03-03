@@ -27,10 +27,11 @@ public class WinTrigger : MonoBehaviour
     private void SaveRecord()
     {
         _uiNewRecord.gameObject.SetActive(false);
-        var timeLevel = Time.timeSinceLevelLoad - GameManager.Instance.StartTime;
+        var timeLevel = Time.time - GameManager.Instance.StartTime;
         if (PlayerPrefs.HasKey(TIME_RECORD))
         {
             var timeRecord = PlayerPrefs.GetFloat(TIME_RECORD);
+
             if (timeLevel < timeRecord)
             {
                 _uiNewRecord.gameObject.SetActive(true);
